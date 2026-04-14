@@ -21,7 +21,7 @@ p {
         color: #fafafa;
     }
 
-    .content-box {
+  .content-box {
   padding: 40px;
   margin: 40px;
   background-color: #726ee2;
@@ -29,12 +29,13 @@ p {
 }
 
 table {
+      margin: 40px;
       width: 100%;
       border-collapse: collapse;
     }
     
     th, td {
-      border: 1px solid #130f8e;
+      border: 2px solid #130f8e;
       padding: 8px;
       text-align: left;
     }
@@ -60,6 +61,8 @@ table {
     }
     
     input[type="submit"] {
+      padding: 40px;
+      margin: 40px;
       background-color: #6e6ade;
       color: white;
       padding: 10px;
