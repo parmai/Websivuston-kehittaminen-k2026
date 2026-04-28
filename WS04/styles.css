@@ -1,0 +1,170 @@
+p {
+  color: #130f8e;
+}
+
+body {
+  background-color: rgb(251, 248, 244);
+}
+
+h1 {
+  font-size: 5em;
+  color: #130f8e;
+}
+
+h2 {
+  font-size: 3em;
+  color: #130f8e;
+}
+
+h3 {
+  font-size: 2em;
+  color: #130f8e;
+}
+
+.content-box {
+  padding: 40px;
+  margin: 40px;
+  background-color: #726ee2;
+  border: 2px solid #5e5add;
+}
+
+table {
+  padding: 40px;
+  margin: 40px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid #130f8e;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 1%;
+}
+
+input[type="submit"] {
+  padding: 40px;
+  margin: 40px;
+  background-color: #6e6ade;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5e5add;
+}
+
+.transition-button {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+  background-color: lightcoral;
+}
+
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100px;
+  }
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: '“';
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: lightgray;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
