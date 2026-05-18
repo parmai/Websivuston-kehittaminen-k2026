@@ -1,39 +1,40 @@
 p {
-      color: #fafafa;
-    }
-    
-    body {
-      background-color: #060a2c;
-    }
-    
-    h1 {
-        font-size: 5em;
-        color: #403be7;
-    }
+  color: #fafafa;
+}
 
-       h2 {
-        font-size: 3em;
-        color: #403be7;
-    }
-   
-       h3 {
-        font-size: 2em;
-        color: #fafafa;
-    }
-           h5 {
-        font-size: 1.5em;
-        color: #fafafa;
-    }
+body {
+  background-color: #060a2c;
+}
 
-  .content-box {
+h1 {
+  font-size: 5em;
+  color: #403be7;
+}
+
+h2 {
+  font-size: 3em;
+  color: #403be7;
+}
+
+h3 {
+  font-size: 2em;
+  color: #fafafa;
+}
+
+h5 {
+  font-size: 1.5em;
+  color: #fafafa;
+}
+
+.content-box {
   padding: 40px;
   margin: 40px;
   background-color: #726ee2;
   border: 2px solid #5e5add;
 }
 
-.card-body{
-  padding:20px;
+.card-body {
+  padding: 20px;
 }
 
 .card-title {
@@ -47,48 +48,50 @@ p {
 }
 
 table {
- padding: 40px;
+  padding: 40px;
   margin: 40px;
-      border-collapse: collapse;
-    }
-    
-    th, td {
-      border: 2px solid #130f8e;
-      padding: 8px;
-      text-align: left;
-    }
-    
-    th {
-      background-color: #f2f2f2;
-    }
-    
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    label {
-      font-weight: bold;
-    }
-    
-    input[type="text"], input[type="email"] {
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 1%;
-    }
-    
-    input[type="submit"] {
-      padding: 40px;
-      margin: 40px;
-      background-color: #6e6ade;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 1px;
-      cursor: pointer;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #5e5add;
-    }
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid #130f8e;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 1%;
+}
+
+input[type="submit"] {
+  padding: 40px;
+  margin: 40px;
+  background-color: #6e6ade;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5e5add;
+}
