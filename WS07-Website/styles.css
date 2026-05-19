@@ -1,94 +1,255 @@
-p {
-      color: #fafafa;
-    }
-    
-    body {
-      background-color: #060a2c;
-    }
-    
-    h1 {
-        font-size: 5em;
-        color: #403be7;
-    }
-
-       h2 {
-        font-size: 3em;
-        color: #403be7;
-    }
-   
-       h3 {
-        font-size: 2em;
-        color: #fafafa;
-    }
-           h5 {
-        font-size: 1.5em;
-        color: #fafafa;
-    }
-
-  .content-box {
-  padding: 40px;
-  margin: 40px;
-  background-color: #726ee2;
-  border: 2px solid #5e5add;
+.navbar-brand {
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.card-body{
-  padding:20px;
+/* Keskitys tietokonenäytöillä */
+@media (min-width: 992px) {
+
+  /* Tehdään navigointipalkista suhteellinen piste keskitykselle */
+  .navbar .container-fluid {
+    position: relative;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 0;
+    /* Poistetaan Bootstrapin oletusmarginaali */
+  }
+}
+
+p {
+  color: #03034a;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fafafa;
+}
+
+h2 {
+  font-size: 2em;
+  color: #03034a;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #03034a;
+}
+
+h5 {
+  font-size: 1em;
+  color: #3030df;
+}
+
+.hero-lead {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fafafa;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.lead {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #03034a;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-intro {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fafafa;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+
+/* LINKIT */
+a:not(.nav-link):not(.navbar-brand):not(.btn) {
+  color: #3030df !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover-tila navigaation ja painikkeiden ulkopuolisille linkeille */
+a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
+  color: #1a1a9e !important;
+  text-decoration: underline;
+}
+
+/* Kohdistetaan herossa ja muualla oleviin ensisijaisiin painikkeisiin */
+.btn-primary {
+  background-color: #3030df !important;
+  border-color: #3030df !important;
+  color: #fafafa !important;
+  /* TÄMÄ TOIMII NYT! */
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* BUTTONIT */
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1a1a9e !important;
+  border-color: #1a1a9e !important;
+  color: #fafafa !important;
+  /* Varmistetaan valkoinen väri myös hoverissa */
+}
+
+.btn-primary {
+  background-color: #3030df !important;
+  border-color: #3030df !important;
+  color: #fafafa !important;
+  /* Tekstin väri valkoiseksi */
+  transition: all 0.2s ease-in-out;
+
+  /* YHTENÄISTETÄÄN KOKO JA POISTETAAN PADDINGIT */
+  font-size: 1rem !important;
+  /* Normaali perusfontin koko (sama kuin leipätekstissä) */
+  padding: 10px !important;
+  /* Poistaa kaiken paddingin (ylhäältä, alhaalta, sivuilta) */
+  border-radius: 2px !important;
+  /* Vapaaehtoinen: tekee kulmista täysin terävät */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1a1a9e !important;
+  border-color: #1a1a9e !important;
+  color: #fafafa !important;
+}
+
+
+.bgimage {
+  background-image: url('./images/maija-moon-bg-sm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Korkeus: 100 % näytöstä miinus navin korkeus */
+  min-height: calc(100vh - 56px);
+
+  /* Keskittää sisällön pysty- ja vaakasuunnassa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bgimage-secondary {
+  background-image: url('./images/maija-moon-bg-sm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(40vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* INTROTEKSTI HERON ALLA */
+.intro-section h2 {
+  color: #03034a;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.intro-section .lead {
+  font-size: 1.25rem;
+  /* Tehdään introtekstistä hieman normaalia lead-tekstiäkin isompi */
+  line-height: 1.8;
+  /* Lisätään riviväliä, jotta tekstiä on mukava lukea */
+}
+
+/* Kirjainväli pienelle yläotsikolle */
+.letter-spacing-sm {
+  letter-spacing: 3px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 400;
+  /* Erittäin paksu/näyttävä teksti */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+/* Kännykkänäytöille (alle 768px) pienennetään tekstiä, jotta se ei rivity rumasti */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tämä vaihtaa fontin kaikille h1-h6 otsikoille sekä Bootstrapin display-luokille */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
+body,
+p {
+  font-family: 'Manrope', sans-serif;
+}
+
+.card-body {
+  padding: 20px;
 }
 
 .card-title {
   font-size: 1.5em;
-  color: #fafafa;
+  color: #010127;
 }
 
 .card {
   background-color: transparent;
-  border-color: #fafafa;
+  border-color: transparent;
+  margin: 0.5rem;
 }
 
-table {
- padding: 40px;
-  margin: 40px;
-      border-collapse: collapse;
-    }
-    
-    th, td {
-      border: 2px solid #130f8e;
-      padding: 8px;
-      text-align: left;
-    }
-    
-    th {
-      background-color: #f2f2f2;
-    }
-    
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    label {
-      font-weight: bold;
-    }
-    
-    input[type="text"], input[type="email"] {
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 1%;
-    }
-    
-    input[type="submit"] {
-      padding: 40px;
-      margin: 40px;
-      background-color: #6e6ade;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 1px;
-      cursor: pointer;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #5e5add;
-    }
+.site-footer {
+  background-color: #fafafa;
+  border-top: 1px solid #dedfe6;
+  padding: 100px 0;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer-link {
+  color: #3030df;
+  text-decoration: none !important;
+  /* Estää alleviivauksen perustilassa */
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #1a1a9e;
+  text-decoration: none !important;
+  /* Estää alleviivauksen hoverissa */
+}
