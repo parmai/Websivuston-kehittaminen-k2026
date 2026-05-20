@@ -4,7 +4,7 @@
   text-transform: uppercase;
 }
 
-/* Keskitys tietokonenäytöillä */
+/* Keskitys deskarilla */
 @media (min-width: 992px) {
 
   /* Tehdään navigointipalkista suhteellinen piste keskitykselle */
@@ -20,6 +20,8 @@
   }
 }
 
+/* FONTIT */
+
 p {
   color: #03034a;
 }
@@ -27,7 +29,6 @@ p {
 body {
   background-color: #fafafa;
 }
-
 
 h2,
 h3,
