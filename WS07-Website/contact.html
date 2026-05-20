@@ -13,7 +13,9 @@
     <!--FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
     <!-- Oma CSS-tiedosto -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -39,11 +41,11 @@
     </nav>
 
     <!--HERO -->
-    <section class="bgimage-secondary">
+    <section class="bgimage-secondary" style="background-image: url('./images/Contact.jpg');">
         <div class="container">
             <div class="row w-100">
                 <div class="col-12 text-center text-white">
-                    <h1 class="hero-title">Contact</h1>
+                    <h1>Contact</h1>
                     <p class="hero-lead">Let's get in touch!</p>
                     <!--  <p class="mt-4"><a href="#" class="btn btn-primary btn-lg">Learn more</a></p> -->
                 </div>
@@ -58,47 +60,88 @@
                 <div class="col-lg-8 text-center">
                     <h2>Looking for a designer?</h2>
                     <p class="lead lh-base mb-4">
-                        I'm always open to new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!
+                        I'm always open to new opportunities and collaborations. Whether you have a project in mind or
+                        just want to connect, feel free to reach out!
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services-section py-5">
+    <section class="contact-section py-5">
         <div class="container">
 
             <div class="card-group">
 
-                <div class="card h-100 border-0 bg-light shadow-sm">
-                    <div class="card-body p-4">
+                <div class="card h-100 border-0 card-text-only">
+                    <div class="card-body p-5">
                         <h5 class="card-title">Have a project in mind?</h5>
-                        <p>
-                            Drop a message <a href="mailto:mmm.parviainen@gmail.com">mmm.parviainen@gmail.com</a>
+                        <p>Email me <a href="mailto:mmm.parviainen@gmail.com">mmm.parviainen@gmail.com</a>
                         </p>
                     </div>
                 </div>
 
-                <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h5 class="card-title">Let's connect</h5>
-                            <p>Find me on <a href="https://www.linkedin.com/in/maija-parviainen/">LinkedIn</a>
-                            </p>
-                        </div>
+                <div class="card h-100 border-0 card-text-only">
+                    <div class="card-body p-5">
+                        <h5 class="card-title">Let's connect</h5>
+                        <p>Find me on <a href="https://www.linkedin.com/in/maija-parviainen/">LinkedIn</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="card h-100 border-0 bg-light shadow-sm">
-                    <div class="card-body p-4">
+                <div class="card h-100 border-0 card-text-only">
+                    <div class="card-body p-5">
                         <h5 class="card-title">Explore my work</h5>
                         <p">
-                         Take a closer look at my <a href="https://www.maijaparviainen.com/">design portfolio</a>
-                        </p>
+                            Have a look at my <a href="https://www.maijaparviainen.com/">design portfolio</a>
+                            </p>
                     </div>
                 </div>
             </div> <!-- /row -->
         </div> <!-- /container -->
     </section>
 
-
+    <div class="container">
+        <form class="row g-3 mx-auto py-5">
+            <div class="col-12 text-center">
+                <h3>Send me a contact request</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="firstName" placeholder="">
+                    <label for="firstName">First name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="lastName" placeholder="">
+                    <label for="lastName">Last name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="email" placeholder="">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Phone number" placeholder="">
+                    <label for="Phone number">Phone number</label>
+                </div>
+            </div>
+            <div class="col-12 ">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        I want to receive news and updates about Maija Parviainen tmi. (optional)
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 
     <!-- FOOTER -->
     <footer class="site-footer bg-white border-top py-5">
@@ -118,7 +161,7 @@
             </div>
         </div>
     </footer>
-</body>
+
 </body>
 
 </html>

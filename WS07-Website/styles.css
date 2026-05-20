@@ -17,7 +17,6 @@
     left: 50%;
     transform: translateX(-50%);
     margin-right: 0;
-    /* Poistetaan Bootstrapin oletusmarginaali */
   }
 }
 
@@ -29,9 +28,30 @@ body {
   background-color: #fafafa;
 }
 
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
+body,
+p {
+  font-family: 'Manrope', sans-serif;
+}
+
 h1 {
-  font-size: 3em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
   color: #fafafa;
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -73,6 +93,32 @@ h5 {
   margin-bottom: 1.5rem;
 }
 
+.intro-section h2 {
+  color: #03034a;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.intro-section .lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+/* Kirjainväli pienelle yläotsikolle */
+.letter-spacing-sm {
+  letter-spacing: 3px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
 
 /* LINKIT */
 a:not(.nav-link):not(.navbar-brand):not(.btn) {
@@ -91,7 +137,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
   background-color: #3030df !important;
   border-color: #3030df !important;
   color: #fafafa !important;
-  /* TÄMÄ TOIMII NYT! */
   transition: all 0.2s ease-in-out;
 }
 
@@ -147,7 +192,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
 }
 
 .bgimage-secondary {
-  background-image: url('./images/maija-moon-bg-sm.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,36 +203,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
 }
 
 
-/* INTROTEKSTI HERON ALLA */
-.intro-section h2 {
-  color: #03034a;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.intro-section .lead {
-  font-size: 1.25rem;
-  /* Tehdään introtekstistä hieman normaalia lead-tekstiäkin isompi */
-  line-height: 1.8;
-  /* Lisätään riviväliä, jotta tekstiä on mukava lukea */
-}
-
-/* Kirjainväli pienelle yläotsikolle */
-.letter-spacing-sm {
-  letter-spacing: 3px;
-}
-
-.hero-title {
-  font-size: 4rem;
-  font-weight: 400;
-  /* Erittäin paksu/näyttävä teksti */
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
 /* Kännykkänäytöille (alle 768px) pienennetään tekstiä, jotta se ei rivity rumasti */
 @media (max-width: 768px) {
   .hero-title {
@@ -196,32 +210,13 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):hover {
   }
 }
 
-/* Tämä vaihtaa fontin kaikille h1-h6 otsikoille sekä Bootstrapin display-luokille */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.display-1,
-.display-2,
-.display-3,
-.display-4 {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 400;
-}
-
-body,
-p {
-  font-family: 'Manrope', sans-serif;
-}
 
 .card-body {
   padding: 20px;
 }
 
 .card-title {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #010127;
 }
 
@@ -229,6 +224,11 @@ p {
   background-color: transparent;
   border-color: transparent;
   margin: 0.5rem;
+}
+
+.card.card-text-only {
+  background-color: #f2f1f5 !important;
+  border: 0px solid #010127 !important;
 }
 
 .site-footer {
